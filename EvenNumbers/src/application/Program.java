@@ -20,7 +20,7 @@ public class Program {
 			v[i] = sc.nextInt();
 		}
 		int result = 0;
-		System.out.println("Números Pares");
+		System.out.println("Números Pares: ");
 		Boolean evenOrnot = false;
 		
 	    for (int i=0; i<n; i++) {
@@ -34,8 +34,9 @@ public class Program {
 	    {
 	    	System.out.println("Não existem números pares");
 	    }
+	    System.out.println("");
 		
-		
+		System.out.println("Quantidade de números pares dentro do Array: " + result);
 	}
 
 }

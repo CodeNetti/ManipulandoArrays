@@ -11,21 +11,24 @@ public class Program {
 		System.out.println("Vamos calcular quaal é o maior número dentro do vetor");
 		System.out.println("Quantos números deseja digitar");
 		int n = sc.nextInt();
-		System.out.println("Ok, agora digite " + n + "números");
-		double resultado = 0;
-		double contador = 0;
-		for(int i=0; i<n; i++) {
-			contador = sc.nextDouble();
-			if(contador > resultado) {
-				resultado = contador;			
+		System.out.println("Ok, agora digite " + n + " números");
+		double result = 0;
+		int position = 0;
+		double[] v = new double[n];
+		for (int i = 0; i < n; i++) {
+			v[i] = sc.nextDouble();
+		}
+		for (int i = 0; i < n; i++) {
+			if (v[i] > result) {
+               result = v[i];
+               position = i;
 			}
 			else {
 				continue;
 			}
-			
 		}
-		System.out.println("O maior valor é " + resultado);
-
+		System.out.println("O maior valor é " + result);
+        System.out.println("O maior valor esta na posição " + position + " do vetor" );
 	}
 
 }

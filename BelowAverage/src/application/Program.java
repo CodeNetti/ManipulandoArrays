@@ -3,44 +3,49 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import models.Model_Pessoa;
+
 public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
 		Locale.setDefault(Locale.US);
-		System.out.println("Digite o tamanho do vetor");
+		String name;
+		double n1;
+		double n2;
+		boolean nobody = false;
+		
+		System.out.println("Vamos calcular a media dos alunos, digite a quantidade de alunos");
+		System.out.println("Lembrando que a media de notas é 6");
 		int n = sc.nextInt();
-		System.out.println("Digite " + n + " números do Vetor");
-		double [] v = new double[n];
+		 Model_Pessoa[] v = new Model_Pessoa[n];
 		double sum = 0;
 		for(int i=0; i<n; i++) 
 		{
-			v[i] = sc.nextDouble();
-			sum += v[i];
+			System.out.println("Digite o nome do " + (i+1) + " aluno(a) e sua respectiva nota do primeiro e segundo semestre");
+			sc.nextLine();
+			name = sc.nextLine();
+			n1 = sc.nextDouble();
+			n2 = sc.nextDouble();
+			v[i] = new Model_Pessoa(name, n1, n2);
 		}
-		
-		
-		double average = sum;
-		average = average / n;
-		System.out.println("Media dos valores do Array = " + average);
-		System.out.println("Valores abaixo da média");
-		
-		boolean error  = false;
-		
+		System.out.println("Alunos aprovados:");
 		for(int i=0; i<n; i++) 
 		{
-			if(v[i] < average) 
+			
+			if(v[i].getN1() + v[i].getN2() / 2 > 6.0) 
 			{
-				System.out.println(v[i]);
-				error = true;
+				System.out.println(v[i].getName());
+				nobody = true;
 			}
 			
+			
 		}
-		if(error == false) 
+		if(nobody == false) 
 		{
-			System.out.println("Não existem valores abaixo da média");
+			System.out.println("Todos os alunos ficaram abaixo da media");
 		}
+		
 		
 		
 		

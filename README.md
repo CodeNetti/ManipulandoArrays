@@ -1,7 +1,7 @@
 
 # ManipulandoArrays
 
-Praticando a implemetação de OO utilizando vetores.
+Praticando a implemetação de OO utilizando Arrays, Vetores e Listas.
 
 ## Autores
 
@@ -15,7 +15,7 @@ Para aprimorar meus conhecimentos em POO, decidi criar este repositório, pois a
 
 ## Aprendizados
 
-POO e Vetores
+POO, Arrays, Listas e Vetores
 
 
 ## Stack utilizada

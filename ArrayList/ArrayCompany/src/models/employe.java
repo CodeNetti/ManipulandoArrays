@@ -36,8 +36,14 @@ public class employe {
 	public Double getSalary() {
 		return salary;
 	}
-	public void setSalary(Double salary) {
-		this.salary = salary;
+	
+	
+	public void empIncrise( int porcentagem) 
+	{
+		
+		double incrise =  this.salary * porcentagem / 100;
+		this.salary += incrise;
+		
 	}
 	
 

@@ -4,12 +4,13 @@ public class employe {
 	
 	String name;
 	Double salary;
-	public static  Integer id;
+	 Integer id = 0;
 	
-	public employe(String name, Double salary) {
+	public employe( int id, String name, Double salary) {
 		
 		this.name = name;
 		this.salary = salary;
+		this.id = id;
 	}
 	
 	public String toString() 
@@ -20,11 +21,11 @@ public class employe {
 	 
 	
 	
-	public static Integer getId() {
+	public  Integer getId() {
 		return id;
 	}
-	public static void setId(Integer id) {
-		employe.id = id;
+	public  void setId(Integer id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;

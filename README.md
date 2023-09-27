@@ -15,7 +15,7 @@ Para aprimorar meus conhecimentos em POO, decidi criar este repositório, pois a
 
 ## Aprendizados
 
-POO, Arrays, Listas e Vetores
+POO, Matrizes, Listas e Vetores
 
 
 ## Stack utilizada

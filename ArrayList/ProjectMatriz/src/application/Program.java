@@ -26,12 +26,15 @@ public class Program {
 		int n = sc.nextInt();
 		for (int c = 0; c < columns; c++) {
 			for (int l = 0; l < lines; l++) {
-				if(matriz[l][c]  == n) 
+				if(matriz[c][l]  == n) 
 				{
 					if(columns > 1 && lines > 1) 
 					{
-					System.out.println("O número " + n + " foi encontrado na coluna  " + (c) + ",  na  linha " + (l) );
+						System.out.println("O número " + n + " foi encontrado na coluna  " + (c) + ",  na  linha " + (l) );
 						System.out.println("Esquerda" + matriz[1-c][l]);
+						System.out.println("Direita" + matriz[1+c][l]);
+						System.out.println("Acima" + matriz[c][1-l]);
+						System.out.println("Abaixo" + matriz[c][1+l]);
 
 					}
 					

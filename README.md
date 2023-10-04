@@ -1,7 +1,7 @@
 
 # ManipulandoArrays
 
-Praticando a implemetação de OO utilizando Arrays, Vetores e Listas.
+Praticando a implemetação de OO utilizando Matrizes e Listas.
 
 ## Autores
 

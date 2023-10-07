@@ -49,7 +49,7 @@ public class Program {
 						System.out
 								.println("O número " + n + " foi encontrado na coluna  " + (c) + ",  na  linha " + (l));
 
-						if (c - 1 <= columns) {
+						if (c - 1 <= columns && c - 1 >= 0) {
 							System.out.println("N a Esquerda " + matriz[c - 1][l]);
 
 						} else {
